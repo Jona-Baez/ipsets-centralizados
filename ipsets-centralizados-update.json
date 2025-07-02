@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WAFIPSetControl",
+      "Effect": "Allow",
+      "Action": [
+        "wafv2:GetIPSet",
+        "wafv2:UpdateIPSet",
+        "wafv2:ListIPSets"
+      ],
+      "Resource": [
+        "arn:aws:wafv2:us-east-1:ACCOUNT_ID:regional/ipset/blacklist/*",
+        "arn:aws:wafv2:us-east-1:ACCOUNT_ID:regional/ipset/whitelist/*",
+        "arn:aws:wafv2:us-east-1:ACCOUNT_ID:global/ipset/blacklist/*",
+        "arn:aws:wafv2:us-east-1:ACCOUNT_ID:global/ipset/whitelist/*",
+        "arn:aws:wafv2:eu-west-1:ACCOUNT_ID:regional/ipset/blacklist/*",
+        "arn:aws:wafv2:eu-west-1:ACCOUNT_ID:regional/ipset/whitelist/*"
+      ]
+    }
+  ]
+}
